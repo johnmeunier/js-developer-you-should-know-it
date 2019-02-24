@@ -1,11 +1,11 @@
 // Import React
 import React from 'react';
-
-// Import Spectacle Core tags
 import { Deck, Heading, Slide } from 'spectacle';
-
-// Import theme
 import createTheme from 'spectacle/lib/themes/default';
+import CodeSlide from 'spectacle-code-slide';
+
+import 'prismjs/themes/prism-okaidia.css';
+import './index.css';
 
 const images = {
   formidagon: require('../assets/formidable-logo.svg'),
@@ -42,6 +42,38 @@ export default class Presentation extends React.Component {
             Discovery of a new fashionable framework : Vanilla.js
           </Heading>
         </Slide>
+        <Slide>
+          <Heading size={1} textColor="acajou">
+            {'{Object}'}
+          </Heading>
+        </Slide>
+        <CodeSlide
+          lang="js"
+          transition={['fade']}
+          // eslint-disable-next-line import/no-unresolved
+          code={require('raw-loader!../assets/codes/objects.example')}
+          ranges={[
+            {
+              loc: [0, 5],
+              title: 'Sample'
+            },
+            {
+              loc: [6, 7],
+              title: 'Entries',
+              note: '[["a", "somestring"], ["b", 42], ["c", false]]'
+            },
+            {
+              loc: [7, 8],
+              title: 'Keys',
+              note: '["a", "b", "c"]'
+            },
+            {
+              loc: [8, 9],
+              title: 'Values',
+              note: '["somestring", 42, false]'
+            }
+          ]}
+        />
       </Deck>
     );
   }

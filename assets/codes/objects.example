@@ -1,0 +1,9 @@
+const obj = {
+  a: 'somestring',
+  b: 42,
+  c: false
+};
+
+Object.entries(obj);
+Object.keys(obj);
+Object.values(obj);
