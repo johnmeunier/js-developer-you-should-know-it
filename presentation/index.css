@@ -1,3 +1,9 @@
+.codeSlide--john h1 {
+  z-index: 99;
+  background-color: #e9724c;
+  border: none !important;
+}
+
 code {
   color: white;
   background-color: #481d24;

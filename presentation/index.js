@@ -48,10 +48,10 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
         <CodeSlide
+          className="codeSlide--john"
           lang="js"
           transition={['fade']}
-          // eslint-disable-next-line import/no-unresolved
-          code={require('raw-loader!../assets/codes/objects.example')}
+          code={require('raw-loader!../assets/codes/object.example')}
           ranges={[
             {
               loc: [0, 5],
@@ -71,6 +71,23 @@ export default class Presentation extends React.Component {
               loc: [8, 9],
               title: 'Values',
               note: '["somestring", 42, false]'
+            }
+          ]}
+        />
+        <Slide>
+          <Heading size={1} textColor="acajou">
+            {'[Array]'}
+          </Heading>
+        </Slide>
+        <CodeSlide
+          className="codeSlide--john"
+          lang="js"
+          transition={['fade']}
+          code={require('raw-loader!../assets/codes/array.example')}
+          ranges={[
+            {
+              loc: [0, 9],
+              title: 'Sample'
             }
           ]}
         />
