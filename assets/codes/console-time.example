@@ -1,0 +1,5 @@
+console.time('myTimer');
+setTimeout(() => {
+    console.log('finish');
+    console.timeEnd('myTimer');
+}, 2000);

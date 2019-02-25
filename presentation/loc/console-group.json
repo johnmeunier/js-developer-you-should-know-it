@@ -1,0 +1,18 @@
+[
+  {
+    "loc": [0, 5],
+    "title": "console.group();"
+  },
+  {
+    "loc": [6, 7],
+    "title": "console.group();"
+  },
+  {
+    "loc": [8, 15],
+    "title": "console.group();"
+  },
+  {
+    "loc": [16, 17],
+    "title": "console.group();"
+  }
+]

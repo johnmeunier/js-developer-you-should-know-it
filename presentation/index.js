@@ -1,6 +1,6 @@
 // Import React
 import React from "react";
-import { Deck, Heading, Slide, List, ListItem, BlockQuote, Quote, Cite } from "spectacle";
+import { Deck, Heading, Slide, List, ListItem, BlockQuote, Quote, Cite, Image } from "spectacle";
 import createTheme from "spectacle/lib/themes/default";
 import CodeSlide from "spectacle-code-slide";
 
@@ -8,8 +8,11 @@ import "prismjs/themes/prism-okaidia.css";
 import "./index.css";
 
 const images = {
-  formidagon: require("../assets/formidable-logo.svg"),
-  goodWork: require("../assets/good-work.gif")
+  consoleGroup: require("../assets/img/console-group.png"),
+  consoleTable1: require("../assets/img/console-table1.png"),
+  consoleTable2: require("../assets/img/console-table2.png"),
+  consoleTable3: require("../assets/img/console-table3.png"),
+  consoleTable4: require("../assets/img/console-table4.png")
 };
 
 // Require CSS
@@ -42,10 +45,8 @@ export default class Presentation extends React.Component {
             Discovery of a new fashionable framework : Vanilla.js
           </Heading>
         </Slide>
-        <Slide>
-          <Heading size={1} textColor="acajou">
-            {"{Object}"}
-          </Heading>
+        <Slide bgColor="acajou" textColor="mustard">
+          <Heading size={1}>{"{Object}"}</Heading>
         </Slide>
         <CodeSlide
           className="codeSlide--john"
@@ -53,10 +54,8 @@ export default class Presentation extends React.Component {
           code={require("raw-loader!../assets/codes/object.example")}
           ranges={require("./loc/object.json")}
         />
-        <Slide>
-          <Heading size={1} textColor="acajou">
-            {"[Array]"}
-          </Heading>
+        <Slide bgColor="acajou" textColor="mustard">
+          <Heading size={1}>{"[Array]"}</Heading>
         </Slide>
         <CodeSlide
           className="codeSlide--john"
@@ -64,18 +63,12 @@ export default class Presentation extends React.Component {
           code={require("raw-loader!../assets/codes/array.example")}
           ranges={require("./loc/array.json")}
         />
-        <Slide>
-          <Heading size={1} textColor="acajou">
-            {"function()"}
-          </Heading>
+        <Slide bgColor="acajou" textColor="mustard">
+          <Heading size={1}>{"function()"}</Heading>
         </Slide>
         <Slide>
-          <Heading size={4} textColor="acajou">
-            {"function()"}
-          </Heading>
-          <Heading size={5} textColor="acajou">
-            pure
-          </Heading>
+          <Heading size={4}>{"function()"}</Heading>
+          <Heading size={5}>pure</Heading>
           <List>
             <ListItem>No side effects</ListItem>
             <ListItem>Its result depends only on his parameters</ListItem>
@@ -127,6 +120,77 @@ export default class Presentation extends React.Component {
           code={require("raw-loader!../assets/codes/currying-avoid.example")}
           ranges={require("./loc/currying-avoid.json")}
         />
+        <CodeSlide
+          className="codeSlide--john"
+          lang="js"
+          code={require("raw-loader!../assets/codes/hof-add.example")}
+          ranges={require("./loc/hof-add.json")}
+        />
+        <CodeSlide
+          className="codeSlide--john"
+          lang="js"
+          code={require("raw-loader!../assets/codes/hof-safe.example")}
+          ranges={require("./loc/hof-safe.json")}
+        />
+        <Slide bgColor="acajou" textColor="mustard">
+          <Heading size={1}>One more thing ...</Heading>
+        </Slide>
+        <CodeSlide
+          className="codeSlide--john"
+          lang="js"
+          code={require("raw-loader!../assets/codes/console-group.example")}
+          ranges={require("./loc/console-group.json")}
+        />
+        <Slide>
+          <Heading size={4} textColor="acajou">
+            console.group()
+          </Heading>
+          <Image src={images.consoleGroup} height="600px" />
+        </Slide>
+        <Slide>
+          <Heading size={4} textColor="acajou">
+            console.table()
+          </Heading>
+          <Image src={images.consoleTable1} />
+        </Slide>
+        <Slide>
+          <Heading size={4} textColor="acajou">
+            console.table()
+          </Heading>
+          <Image src={images.consoleTable2} />
+        </Slide>
+        <Slide>
+          <Heading size={4} textColor="acajou">
+            console.table()
+          </Heading>
+          <Image src={images.consoleTable3} />
+        </Slide>
+        <Slide>
+          <Heading size={4} textColor="acajou">
+            console.table()
+          </Heading>
+          <Image src={images.consoleTable4} />
+        </Slide>
+        <CodeSlide
+          className="codeSlide--john"
+          lang="js"
+          code={require("raw-loader!../assets/codes/console-time.example")}
+          ranges={require("./loc/console-time.json")}
+        />
+        <Slide>
+          <Heading size={4} textColor="acajou">
+            Copy
+          </Heading>
+          <video width="100%" controls src={require("file-loader!../assets/video/copy.mp4")}>
+            Fallback
+          </video>
+        </Slide>
+        <Slide>
+          <Heading size={4} textColor="acajou">
+            Live Expression
+          </Heading>
+          <video width="100%" controls src={require("file-loader!../assets/video/liveExpression.mp4")} />
+        </Slide>
       </Deck>
     );
   }

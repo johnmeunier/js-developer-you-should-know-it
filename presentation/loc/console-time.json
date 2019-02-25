@@ -1,0 +1,26 @@
+[
+  {
+    "loc": [0, 1],
+    "title": "console.time();"
+  },
+  {
+    "loc": [1, 2],
+    "title": "console.time();"
+  },
+  {
+    "loc": [2, 3],
+    "title": "console.time();"
+  },
+  {
+    "loc": [3, 4],
+    "title": "console.time();"
+  },
+  {
+    "loc": [4, 5],
+    "title": "console.time();"
+  },
+  {
+    "loc": [0, 5],
+    "title": "console.time();"
+  }
+]

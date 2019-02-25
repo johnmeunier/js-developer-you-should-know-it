@@ -1,0 +1,17 @@
+var activities = [
+  {"id": "activity1", "desc": "description of my first activity", "type": "main"},
+  {"id": "activity2", "desc": "description of my second activity", "type": "sub"},
+  {"id": "activity3", "desc": "description of my third activity", "type": "sub"},
+];
+
+console.warn('### START Loop');
+
+activities.forEach(({id, desc, type}) => {
+  console.group();
+  console.log(id);
+  console.log(desc);
+  console.log(type);
+  console.groupEnd();
+});
+
+console.warn('### END Loop');

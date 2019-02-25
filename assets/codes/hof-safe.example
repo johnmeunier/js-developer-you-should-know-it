@@ -1,0 +1,10 @@
+add = (a, b) => a + b;
+
+withLog = fn => (...args) => {
+  console.log(`${fn.name}(${args.join(', ')}) =  ${fn(...args)}`);
+  return fn(...args);
+}
+
+logAdd = withLog(add);
+
+logAdd(3,1);
