@@ -54,12 +54,12 @@ const theme = createTheme(
 export default class Presentation extends React.Component {
   render() {
     return (
-      <Deck transition={["zoom", "slide"]} transitionDuration={300} theme={theme} bgColor="mustard">
+      <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme} bgColor="mustard">
         <Slide bgImage={images.lille}>
           <Heading size={2} textColor="mustard">
             JS Developer, you should know it
           </Heading>
-          <Heading size={5} textColor="white">
+          <Heading size={6} textColor="white">
             Discovery of a new fashionable framework : Vanilla.js
           </Heading>
           <Twitter />
@@ -101,9 +101,13 @@ export default class Presentation extends React.Component {
         <Slide bgColor="acajou" textColor="mustard">
           <Heading size={1}>{"function()"}</Heading>
         </Slide>
-        <Slide>
-          <Heading size={4}>{"function()"}</Heading>
-          <Heading size={5}>pure</Heading>
+        <Slide textColor="acajou">
+          <Heading size={4} textColor="acajou">
+            {"function()"}
+          </Heading>
+          <Heading size={5} textColor="acajou">
+            pure
+          </Heading>
           <List>
             <ListItem>No side effects</ListItem>
             <ListItem>Its result depends only on his parameters</ListItem>
@@ -115,7 +119,7 @@ export default class Presentation extends React.Component {
           code={require("raw-loader!../assets/codes/pure.example")}
           ranges={require("./loc/pure.json")}
         />
-        <Slide>
+        <Slide textColor="acajou">
           <Heading size={4} textColor="acajou">
             {"function()"}
           </Heading>
