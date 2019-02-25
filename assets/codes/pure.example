@@ -1,0 +1,19 @@
+const addSeven = x => x + 7;
+
+const logAddSeven = x => {
+  console.log(x + 7);
+  return x + 7;
+};
+
+valueToAdd = 7;
+addAValue = x => x + valueToAdd;
+addAValue(8);
+addAValue(8);
+
+addAValue = (x, y) => x + y;
+
+addXDay = x => new Date().getDate() + x;
+addXDay(1);
+
+addXDay = (date, x) => date.getDate() + x;
+addXDay(new Date(), 1);

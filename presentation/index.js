@@ -1,6 +1,6 @@
 // Import React
 import React from "react";
-import { Deck, Heading, Slide } from "spectacle";
+import { Deck, Heading, Slide, List, ListItem } from "spectacle";
 import createTheme from "spectacle/lib/themes/default";
 import CodeSlide from "spectacle-code-slide";
 
@@ -50,7 +50,6 @@ export default class Presentation extends React.Component {
         <CodeSlide
           className="codeSlide--john"
           lang="js"
-          transition={["fade"]}
           code={require("raw-loader!../assets/codes/object.example")}
           ranges={require("./loc/object.json")}
         />
@@ -62,10 +61,45 @@ export default class Presentation extends React.Component {
         <CodeSlide
           className="codeSlide--john"
           lang="js"
-          transition={["fade"]}
           code={require("raw-loader!../assets/codes/array.example")}
           ranges={require("./loc/array.json")}
         />
+        <Slide>
+          <Heading size={1} textColor="acajou">
+            {"function()"}
+          </Heading>
+        </Slide>
+        <Slide>
+          <Heading size={4} textColor="acajou">
+            {"function()"}
+          </Heading>
+          <Heading size={5} textColor="acajou">
+            pure
+          </Heading>
+          <List>
+            <ListItem>No side effects</ListItem>
+            <ListItem>Its result depends only on his parameters</ListItem>
+          </List>
+        </Slide>
+        <CodeSlide
+          className="codeSlide--john"
+          lang="js"
+          code={require("raw-loader!../assets/codes/pure.example")}
+          ranges={require("./loc/pure.json")}
+        />
+        <Slide>
+          <Heading size={4} textColor="acajou">
+            {"function()"}
+          </Heading>
+          <Heading size={5} textColor="acajou">
+            pure
+          </Heading>
+          <List>
+            <ListItem>Immutability (~50% less debug)</ListItem>
+            <ListItem>Pragmatic</ListItem>
+            <ListItem>Simplify test</ListItem>
+          </List>
+        </Slide>
       </Deck>
     );
   }
