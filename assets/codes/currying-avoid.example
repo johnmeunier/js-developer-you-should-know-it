@@ -1,0 +1,9 @@
+add = (n, m) => n + m
+curryedAdd = (n) => ( (m) => add(n, m) )
+addOne = curryedAdd(1)
+
+values = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+addedValues = values.map(add); 
+
+addedOneValues = values.map(addOne); 

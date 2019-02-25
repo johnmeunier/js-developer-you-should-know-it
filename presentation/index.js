@@ -1,6 +1,6 @@
 // Import React
 import React from "react";
-import { Deck, Heading, Slide, List, ListItem } from "spectacle";
+import { Deck, Heading, Slide, List, ListItem, BlockQuote, Quote, Cite } from "spectacle";
 import createTheme from "spectacle/lib/themes/default";
 import CodeSlide from "spectacle-code-slide";
 
@@ -100,6 +100,33 @@ export default class Presentation extends React.Component {
             <ListItem>Simplify test</ListItem>
           </List>
         </Slide>
+        <Slide>
+          <Heading size={4} textColor="acajou">
+            {"function()"}
+          </Heading>
+          <Heading size={5} textColor="acajou">
+            currying
+          </Heading>
+          <BlockQuote>
+            <Quote>
+              There is a way to reduce functions of more than one argument to functions of one argument, a way called
+              currying
+            </Quote>
+            <Cite>Handbook of the History of Logic - Volume 5</Cite>
+          </BlockQuote>
+        </Slide>
+        <CodeSlide
+          className="codeSlide--john"
+          lang="js"
+          code={require("raw-loader!../assets/codes/currying-basic.example")}
+          ranges={require("./loc/currying-basic.json")}
+        />
+        <CodeSlide
+          className="codeSlide--john"
+          lang="js"
+          code={require("raw-loader!../assets/codes/currying-avoid.example")}
+          ranges={require("./loc/currying-avoid.json")}
+        />
       </Deck>
     );
   }

@@ -35,3 +35,8 @@ body::before {
   width: calc(1400px - 20px) !important;
   bottom: 40px !important;
 }
+
+blockquote span {
+  color: #fff !important;
+  font-size: 3.5rem !important;
+}

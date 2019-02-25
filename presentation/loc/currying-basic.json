@@ -1,0 +1,18 @@
+[
+  {
+    "loc": [0, 1],
+    "title": "Currying"
+  },
+  {
+    "loc": [2, 3],
+    "title": "Currying"
+  },
+  {
+    "loc": [4, 6],
+    "title": "Currying"
+  },
+  {
+    "loc": [0, 6],
+    "title": "Currying"
+  }
+]
