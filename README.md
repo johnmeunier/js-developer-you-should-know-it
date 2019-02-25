@@ -1,56 +1,27 @@
-# Spectacle Boilerplate
+# JS Developer, you should know it
 
-## Contents
+## Context
 
-- [Reference](#reference)
-- [Getting Started](#getting-started)
-- [Tutorial](#tutorial)
-- [Build & Deployment](#build-deployment)
+This new version is available here : [JS Developer, you should know it](http://js-developer-you-should-know-it.netlify.com)
+It's a new version of an original talk available on [SpeakerDeck](https://speakerdeck.com/johnmeunier/js-developer-you-should-know-it)
 
-## Reference
+## Ressources
 
-The Spectacle core API is available in the [Spectacle Docs](https://github.com/FormidableLabs/spectacle/blob/master/README.md).
+- [Spectacle Code Slide](https://github.com/jamiebuilds/spectacle-code-slide)
+- [SpeakerDeck](https://speakerdeck.com/johnmeunier/js-developer-you-should-know-it)
+- [Logic from Russel to Church](https://books.google.fr/books?id=IMgg0Uc00I4C)
+- [Lille Web](https://lilleweb.fr)
 
-## Getting Started
+## Installation
 
-1. Download the boilerplate
-
-   ```sh
-   git clone git@github.com:FormidableLabs/spectacle-boilerplate.git
-   ```
-
-2. Remove existing version control
-
-   ```sh
-   rm -R .git
-   ```
-
-3. Install dependencies
+1. Install dependencies
 
    ```sh
    yarn install
    ```
 
-4. Start the webpack server. The server will run at [`localhost:3000`](http://localhost:3000).
+2. Start the webpack server. The server will run at [`localhost:3000`](http://localhost:3000).
 
    ```sh
    yarn start
    ```
-
-## Tutorial
-
-If want you a step-by-step guide for getting started with Spectacle, a basic tutorial is available [here](https://github.com/FormidableLabs/spectacle/blob/master/docs/tutorial.md).
-
-## Build & Deployment
-
-Building the dist version of the project is as easy as running
-
-```sh
-yarn build
-```
-
-If you want to deploy the slideshow to surge, run
-
-```sh
-yarn deploy
-```
