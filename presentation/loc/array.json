@@ -1,0 +1,76 @@
+[
+  {
+    "loc": [0, 9],
+    "title": "Sample"
+  },
+  {
+    "loc": [12, 13],
+    "title": "For Each",
+    "note": "undefined"
+  },
+  {
+    "loc": [13, 16],
+    "title": "For Each",
+    "note": "Londres Tokyo Mexico"
+  },
+  {
+    "loc": [17, 18],
+    "title": "Map",
+    "note": "[ false, true, true, true, false, false, false ] "
+  },
+  {
+    "loc": [19, 20],
+    "title": "Filter",
+    "note": "[ { name: 'Londres', population: 8630100 }, { name: 'Tokyo', population: 13754059 }, { name: 'Mexico', population: 8851080 } ]  "
+  },
+  {
+    "loc": [21, 22],
+    "title": "Find",
+    "note": "{ name: 'Paris', population: 2268265 } "
+  },
+  {
+    "loc": [22, 23],
+    "title": "Find",
+    "note": "{ name: 'Paris', population: 2268265 } "
+  },
+  {
+    "loc": [24, 25],
+    "title": "Some",
+    "note": "true"
+  },
+  {
+    "loc": [25, 26],
+    "title": "Some",
+    "note": "false"
+  },
+  {
+    "loc": [27, 28],
+    "title": "Every",
+    "note": "true"
+  },
+  {
+    "loc": [28, 29],
+    "title": "Every",
+    "note": "false"
+  },
+  {
+    "loc": [30, 31],
+    "title": "Sort",
+    "note": "[ { name: 'Washington', population: 658893 }, { name: 'Paris', population: 2268265 }, { name: 'Madrid', population: 3233527 }, { name: 'Berlin', population: 3520000 }, { name: 'Londres', population: 8630100 }, { name: 'Mexico', population: 8851080 }, { name: 'Tokyo', population: 13754059 } ] "
+  },
+  {
+    "loc": [31, 32],
+    "title": "Sort",
+    "note": "[ { name: 'Tokyo', population: 13754059 },{ name: 'Mexico', population: 8851080 }, { name: 'Londres', population: 8630100 }, { name: 'Berlin', population: 3520000 }, { name: 'Madrid', population: 3233527 }, { name: 'Paris', population: 2268265 }, { name: 'Washington', population: 658893 } ]"
+  },
+  {
+    "loc": [33, 34],
+    "title": "Reduce",
+    "note": "40915924"
+  },
+  {
+    "loc": [34, 38],
+    "title": "Reduce",
+    "note": "[ 'Tokyo--13754059', 'Mexico--8851080', 'Londres--8630100', 'Berlin--3520000', 'Madrid--3233527', 'Paris--2268265', 'Washington--658893' ] "
+  }
+]

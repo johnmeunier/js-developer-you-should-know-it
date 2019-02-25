@@ -1,0 +1,21 @@
+[
+  {
+    "loc": [0, 5],
+    "title": "Sample"
+  },
+  {
+    "loc": [6, 7],
+    "title": "Entries",
+    "note": "[[\"a\", \"somestring\"], [\"b\", 42], [\"c\", false]]"
+  },
+  {
+    "loc": [7, 8],
+    "title": "Keys",
+    "note": "[\"a\", \"b\", \"c\"]"
+  },
+  {
+    "loc": [8, 9],
+    "title": "Values",
+    "note": "[\"somestring\", 42, false]"
+  }
+]

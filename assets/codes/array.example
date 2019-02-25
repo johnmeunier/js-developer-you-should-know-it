@@ -11,71 +11,28 @@ const cities = [
 const moreThan5M = (val) => val > 5000000;
 
 cities.forEach(({name, population}) => moreThan5M(population));
-//
 cities.forEach(({name, population}) => {
   moreThan5M(population) && console.log(name);
 });
-// Londres ​​​​Tokyo ​​​​​Mexico ​​​​​
 
 cities.map(({population}) => moreThan5M(population)); 
-// [ false, true, true, true, false, false, false ] 
 
 cities.filter(({population}) => moreThan5M(population));
-/*
-[ { name: 'Londres', population: 8630100 }, 
-  { name: 'Tokyo', population: 13754059 }, 
-  { name: 'Mexico', population: 8851080 } ] 
-*/
 
 cities.find(({name}) => name === "Paris");
-// { name: 'Paris', population: 2268265 } 
 cities.find(({population}) => population > 1000);
-//{ name: 'Paris', population: 2268265 } 
 
 cities.some(({population}) => population > 1000);
-// true
 cities.some(({population}) => population > 100000000);
-// false
 
 cities.every(({population}) => population > 1000);
-// true
 cities.every(({population}) => population > 5000000);
-// false
 
 cities.sort((a, b) => a.population - b.population);
-/*
-[ { name: 'Washington', population: 658893 }, 
-  { name: 'Paris', population: 2268265 }, 
-  { name: 'Madrid', population: 3233527 }, 
-  { name: 'Berlin', population: 3520000 }, 
-  { name: 'Londres', population: 8630100 }, 
-  { name: 'Mexico', population: 8851080 }, 
-  { name: 'Tokyo', population: 13754059 } ] 
-*/
 cities.sort((a, b) => a.population + b.population);
-/*
-[ { name: 'Tokyo', population: 13754059 }, 
-  { name: 'Mexico', population: 8851080 }, 
-  { name: 'Londres', population: 8630100 }, 
-  { name: 'Berlin', population: 3520000 }, 
-  { name: 'Madrid', population: 3233527 }, 
-  { name: 'Paris', population: 2268265 }, 
-  { name: 'Washington', population: 658893 } ] 
-*/
 
 cities.reduce((acc, {population}) => acc + population, 0);
-// 40915924
-const sum = cities.reduce((acc, {name, population}) => 
+cities.reduce((acc, {name, population}) => 
   {acc.push(`${name}--${population}`); 
   return acc
 }, []);
-console.log(sum);
-/*
-[ 'Tokyo--13754059', 
-  'Mexico--8851080', 
-  'Londres--8630100', 
-  'Berlin--3520000', 
-  'Madrid--3233527', 
-  'Paris--2268265', 
-  'Washington--658893' ] 
-*/
