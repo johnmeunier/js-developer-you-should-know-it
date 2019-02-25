@@ -232,7 +232,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide bgImage={images.lille}>
           <Heading size={6} textColor="#fff">
-            Simplify web deployments with Netlify
+            JS Developer, you should know it
           </Heading>
           <Heading textColor="mustard" fit>
             Thanks!
