@@ -3,6 +3,7 @@ import React from "react";
 import { Deck, Heading, Slide, List, ListItem, BlockQuote, Quote, Cite, Image } from "spectacle";
 import createTheme from "spectacle/lib/themes/default";
 import CodeSlide from "spectacle-code-slide";
+import preloader from "spectacle/lib/utils/preloader";
 
 import "prismjs/themes/prism-okaidia.css";
 import "./index.css";
@@ -14,6 +15,14 @@ const images = {
   consoleTable3: require("../assets/img/console-table3.png"),
   consoleTable4: require("../assets/img/console-table4.png")
 };
+
+preloader({
+  consoleGroup: images.consoleGroup,
+  consoleTable1: images.consoleTable1,
+  consoleTable2: images.consoleTable2,
+  consoleTable3: images.consoleTable3,
+  consoleTable4: images.consoleTable4
+});
 
 // Require CSS
 require("normalize.css");
