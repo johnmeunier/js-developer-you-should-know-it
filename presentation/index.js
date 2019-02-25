@@ -159,6 +159,18 @@ export default class Presentation extends React.Component {
           code={require("raw-loader!../assets/codes/currying-avoid.example")}
           ranges={require("./loc/currying-avoid.json")}
         />
+        <Slide textColor="acajou">
+          <Heading size={4} textColor="acajou">
+            {"function()"}
+          </Heading>
+          <Heading size={5} textColor="acajou">
+            Higher-order function
+          </Heading>
+          <List>
+            <ListItem>Takes one or more functions as arguments</ListItem>
+            <ListItem>Returns a function as its result</ListItem>
+          </List>
+        </Slide>
         <CodeSlide
           className="codeSlide--john"
           lang="js"

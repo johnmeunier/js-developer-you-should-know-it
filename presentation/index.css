@@ -38,7 +38,15 @@ body::before {
 }
 
 blockquote span {
-  color: #fff !important;
+  border-left: 20px solid #255f85 !important;
+}
+
+blockquote span,
+blockquote cite {
+  color: #481d24 !important;
+}
+
+blockquote span {
   font-size: 3.5rem !important;
 }
 
