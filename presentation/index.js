@@ -5,6 +5,9 @@ import createTheme from "spectacle/lib/themes/default";
 import CodeSlide from "spectacle-code-slide";
 import preloader from "spectacle/lib/utils/preloader";
 
+import Profile from "./profiles";
+import Twitter from "./twitter";
+
 import "prismjs/themes/prism-okaidia.css";
 import "./index.css";
 
@@ -13,7 +16,10 @@ const images = {
   consoleTable1: require("../assets/img/console-table1.png"),
   consoleTable2: require("../assets/img/console-table2.png"),
   consoleTable3: require("../assets/img/console-table3.png"),
-  consoleTable4: require("../assets/img/console-table4.png")
+  consoleTable4: require("../assets/img/console-table4.png"),
+  john: require("../assets/img/john.jpg"),
+  jl: require("../assets/img/jl.jpg"),
+  lille: require("../assets/img/lille.jpg")
 };
 
 preloader({
@@ -21,7 +27,10 @@ preloader({
   consoleTable1: images.consoleTable1,
   consoleTable2: images.consoleTable2,
   consoleTable3: images.consoleTable3,
-  consoleTable4: images.consoleTable4
+  consoleTable4: images.consoleTable4,
+  john: images.john,
+  jl: images.jl,
+  lille: images.lille
 });
 
 // Require CSS
@@ -46,14 +55,31 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={300} theme={theme} bgColor="mustard">
-        <Slide>
-          <Heading size={2} textColor="acajou">
+        <Slide bgImage={images.lille}>
+          <Heading size={2} textColor="mustard">
             JS Developer, you should know it
           </Heading>
           <Heading size={5} textColor="white">
             Discovery of a new fashionable framework : Vanilla.js
           </Heading>
+          <Twitter />
         </Slide>
+        <Profile
+          name="Johnathan MEUNIER"
+          job="FullStack Engineer JS"
+          website="Johnathan.fr"
+          twitter="j7n_ _"
+          github="johnmeunier"
+          pic={images.john}
+        />
+        <Profile
+          name="Jean-Lou PIERME"
+          job="FullStack Software Engineer"
+          website="jlou.fr"
+          twitter="jloupiote"
+          github="jlou"
+          pic={images.jl}
+        />
         <Slide bgColor="acajou" textColor="mustard">
           <Heading size={1}>{"{Object}"}</Heading>
         </Slide>
@@ -199,6 +225,15 @@ export default class Presentation extends React.Component {
             Live Expression
           </Heading>
           <video width="100%" controls src={require("file-loader!../assets/video/liveExpression.mp4")} />
+        </Slide>
+        <Slide bgImage={images.lille}>
+          <Heading size={6} textColor="#fff">
+            Simplify web deployments with Netlify
+          </Heading>
+          <Heading textColor="mustard" fit>
+            Thanks!
+          </Heading>
+          <Twitter />
         </Slide>
       </Deck>
     );
