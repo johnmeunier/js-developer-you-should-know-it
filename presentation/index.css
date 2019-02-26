@@ -29,6 +29,10 @@ body::before {
   padding: 10px;
 }
 
+.codeSlide--john pre {
+  padding-top: 20% !important;
+}
+
 .spectacle-content pre + div {
   border: 5px solid white;
   background-color: #255f85 !important;

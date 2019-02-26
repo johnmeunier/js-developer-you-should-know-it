@@ -32,7 +32,7 @@ cities.sort((a, b) => a.population - b.population);
 cities.sort((a, b) => a.population + b.population);
 
 cities.reduce((acc, {population}) => acc + population, 0);
-cities.reduce((acc, {name, population}) => 
-  {acc.push(`${name}--${population}`); 
+cities.reduce((acc, {name, population}) => {
+  acc.push(`${name}--${population}`); 
   return acc
 }, []);
