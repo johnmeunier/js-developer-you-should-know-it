@@ -193,6 +193,12 @@ export default class Presentation extends React.Component {
           code={require("raw-loader!../assets/codes/promises.example")}
           ranges={require("./loc/promises.json")}
         />
+        <CodeSlide
+          className="codeSlide--john"
+          lang="js"          
+          code={require("raw-loader!../assets/codes/expressions.example")}
+          ranges={require("./loc/expressions.json")}
+        />
         <Slide bgColor="acajou" textColor="mustard">
           <Heading size={1}>One more thing ...</Heading>
         </Slide>

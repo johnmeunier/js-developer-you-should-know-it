@@ -1,0 +1,53 @@
+[
+    {
+      "loc": [0, 4],
+      "title": "Ternary"
+    },
+    {
+      "loc": [5, 9],
+      "title": "&&",
+      "note": "ok"
+    },
+    {
+      "loc": [9, 10],
+      "title": "&&",
+      "note": "ok"
+    },
+    {
+      "loc": [10, 12],
+      "title": "&&",
+      "note": "false"
+    },
+    {
+      "loc": [12, 14],
+      "title": "&&",
+      "note": "ok"
+    },
+    {
+      "loc": [14, 16],
+      "title": "&&",
+      "note": "0"
+    },
+    {
+      "loc": [17, 30],
+      "title": "JSX"
+    },
+    {
+      "loc": [30, 35],
+      "title": "JSX"
+    },
+    {
+      "loc": [36, 38],
+      "title": "||",
+      "note": "ok"
+    },
+    {
+      "loc": [38, 40],
+      "title": "||",
+      "note": "empty"
+    },
+    {
+      "loc": [41, 43],
+      "title": "void"
+    }
+]

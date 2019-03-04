@@ -1,0 +1,43 @@
+makeSafe = fun => (...args) =>
+  args.some(arg => Number(arg) !== arg) ? 
+    NaN : 
+    fun(...args)
+
+const myBool = true;
+if(myBool){
+    console.log('ok')
+}
+myBool && console.log('ok');
+const myBool = false;
+myBool && console.log('ok');
+const myBool = ['val1'].length;
+myBool && console.log('ok');
+var myBool = [].length;
+myBool && console.log('ok');
+
+function Mailbox(props) {
+  const {unrdMsgs} = props;
+  return (
+    <div>
+      <h1>Hello!</h1>
+      {unrdMsgs.length > 0 &&
+        <h2>
+          You have {unrdMsgs.length} unread messages.
+        </h2>
+      }
+    </div>
+  );
+}
+const messages = ['React', 'Re: React', 'Re:Re: React'];
+ReactDOM.render(
+  <Mailbox unrdMsgs={messages} />,
+  document.getElementById('root')
+);
+
+const myBool = ['val1'].length;
+myBool || 'empty';
+const myBool = [].length;
+myBool || 'empty';
+
+const changeCtx = (state) => 
+  void state && addToRisk('toto');
