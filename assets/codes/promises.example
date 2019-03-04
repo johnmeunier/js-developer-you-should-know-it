@@ -1,0 +1,36 @@
+const pro1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("prom1 finished");
+  }, 500);
+});
+
+const pro2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("prom2 finished");
+  }, 1000);
+});
+
+const pro3 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("prom3 finished");
+  }, 300);
+});
+
+const pro4 = new Promise((resolve, reject) => {
+  reject("prom4 failed");
+});
+
+pro1.then(data => void console.log(data));
+pro2.then(data => void console.log(data));
+pro3.then(data => void console.log(data));
+pro4.then(data => void console.log(data));
+
+Promise.all([pro1, pro2, pro3]).then(values => {
+  console.log(values);
+});
+
+Promise.race([pro1, pro2, pro3]).then(values => {
+  console.log(`race: ${values}`);
+});
+
+pro4.catch(data => void console.log(data));

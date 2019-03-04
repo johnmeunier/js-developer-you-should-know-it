@@ -1,0 +1,38 @@
+[
+    {
+      "loc": [0, 21],
+      "title": "Promises"
+    },
+    {
+      "loc": [22, 26],
+      "title": "Response",
+      "note": "Uncaught (in promise) prom4 failed / prom3 finished / prom1 finished / prom2 finished"
+    },
+    {
+        "loc": [27, 30],
+        "title": "All"
+    },
+    {
+        "loc": [27, 30],
+        "title": "All",
+        "note": "['prom1 finished', 'prom2 finished', 'prom3 finished']"
+    },
+    {
+        "loc": [31, 34],
+        "title": "Race"
+    },
+    {
+        "loc": [31, 34],
+        "title": "Race",
+        "note": "race: prom3 finished"
+    },
+    {
+        "loc": [35, 36],
+        "title": "Catch"
+    },
+    {
+        "loc": [35, 36],
+        "title": "Catch",
+        "note": "prom4 failed"
+    }
+]

@@ -1,6 +1,6 @@
 // Import React
 import React from "react";
-import { Deck, Heading, Slide, List, ListItem, BlockQuote, Quote, Cite, Image } from "spectacle";
+import { Deck, Heading, Slide, List, ListItem, BlockQuote, Quote, Cite, Image, Code } from "spectacle";
 import createTheme from "spectacle/lib/themes/default";
 import CodeSlide from "spectacle-code-slide";
 import preloader from "spectacle/lib/utils/preloader";
@@ -110,7 +110,7 @@ export default class Presentation extends React.Component {
           </Heading>
           <List>
             <ListItem>No side effects</ListItem>
-            <ListItem>Its result depends only on his parameters</ListItem>
+            <ListItem>Deterministic: its result depends only on his parameters</ListItem>
           </List>
         </Slide>
         <CodeSlide
@@ -129,7 +129,7 @@ export default class Presentation extends React.Component {
           <List>
             <ListItem>Immutability (~50% less debug)</ListItem>
             <ListItem>Pragmatic</ListItem>
-            <ListItem>Simplify test</ListItem>
+            <ListItem>Simplify tests</ListItem>
           </List>
         </Slide>
         <Slide>
@@ -182,6 +182,16 @@ export default class Presentation extends React.Component {
           lang="js"
           code={require("raw-loader!../assets/codes/hof-safe.example")}
           ranges={require("./loc/hof-safe.json")}
+        />
+        
+        <Slide bgColor="acajou" textColor="mustard">
+          <Heading size={1}>{"(.O{the}rs[])"}</Heading>
+        </Slide>
+        <CodeSlide
+          className="codeSlide--john"
+          lang="js"          
+          code={require("raw-loader!../assets/codes/promises.example")}
+          ranges={require("./loc/promises.json")}
         />
         <Slide bgColor="acajou" textColor="mustard">
           <Heading size={1}>One more thing ...</Heading>
