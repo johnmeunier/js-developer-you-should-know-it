@@ -1,0 +1,24 @@
+[
+    {
+        "loc": [
+            0,
+            1
+        ],
+        "title": "fetch"
+    },
+    {
+        "loc": [
+            1,
+            2
+        ],
+        "title": "fetch"
+    },
+    {
+        "loc": [
+            2,
+            3
+        ],
+        "title": "fetch",
+        "note": "{name: \"Luke Skywalker\", height: \"172\", mass: \"77\", hair_color: \"blond\", skin_color: \"fair\", …}"
+    }
+]

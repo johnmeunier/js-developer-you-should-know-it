@@ -6,7 +6,7 @@ This new version is available here : [JS Developer, you should know it](http://j
 
 It's a new version of an original talk available on [SpeakerDeck](https://speakerdeck.com/johnmeunier/js-developer-you-should-know-it)
 
-## Ressources
+## Resources
 
 - [Spectacle Code Slide](https://github.com/jamiebuilds/spectacle-code-slide)
 - [SpeakerDeck](https://speakerdeck.com/johnmeunier/js-developer-you-should-know-it)

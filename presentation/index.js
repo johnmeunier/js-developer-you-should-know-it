@@ -1,15 +1,15 @@
 // Import React
+import "prismjs/themes/prism-okaidia.css";
 import React from "react";
-import { Deck, Heading, Slide, List, ListItem, BlockQuote, Quote, Cite, Image, Code } from "spectacle";
-import createTheme from "spectacle/lib/themes/default";
+import { BlockQuote, Cite, Deck, Heading, Image, List, ListItem, Quote, Slide } from "spectacle";
 import CodeSlide from "spectacle-code-slide";
+import createTheme from "spectacle/lib/themes/default";
 import preloader from "spectacle/lib/utils/preloader";
-
+import "./index.css";
 import Profile from "./profiles";
 import Twitter from "./twitter";
 
-import "prismjs/themes/prism-okaidia.css";
-import "./index.css";
+
 
 const images = {
   consoleGroup: require("../assets/img/console-group.png"),
@@ -20,7 +20,8 @@ const images = {
   john: require("../assets/img/john.jpg"),
   jl: require("../assets/img/jl.jpg"),
   lille: require("../assets/img/lille.jpg"),
-  promise: require("../assets/img/promise.gif")
+  promise: require("../assets/img/promise.gif"),
+  label: require("../assets/img/labeL.jpg")
 };
 
 preloader({
@@ -189,10 +190,34 @@ export default class Presentation extends React.Component {
           code={require("raw-loader!../assets/codes/hof-safe.example")}
           ranges={require("./loc/hof-safe.json")}
         />
-        
+
         <Slide bgColor="acajou" textColor="mustard">
           <Heading size={1}>{"(.O{the}rs[])"}</Heading>
         </Slide>
+        <CodeSlide
+          className="codeSlide--john"
+          lang="js"
+          code={require("raw-loader!../assets/codes/label.example")}
+          ranges={require("./loc/label.json")}
+        />
+        <Slide>
+          <Heading size={4} textColor="acajou">Label result</Heading>
+          <Image src={images.label} />
+        </Slide>
+        <CodeSlide
+          className="codeSlide--john"
+          lang="js"
+          code={require("raw-loader!../assets/codes/block.example")}
+          ranges={require("./loc/block.json")}
+        >
+        </CodeSlide>
+        <CodeSlide
+          className="codeSlide--john"
+          lang="js"
+          code={require("raw-loader!../assets/codes/fetch.example")}
+          ranges={require("./loc/fetch.json")}
+        >
+        </CodeSlide>
         <Slide>
           <Heading size={4} textColor="acajou">
             Promise
@@ -201,13 +226,13 @@ export default class Presentation extends React.Component {
         </Slide>
         <CodeSlide
           className="codeSlide--john"
-          lang="js"          
+          lang="js"
           code={require("raw-loader!../assets/codes/promises.example")}
           ranges={require("./loc/promises.json")}
         />
         <CodeSlide
           className="codeSlide--john"
-          lang="js"          
+          lang="js"
           code={require("raw-loader!../assets/codes/expressions.example")}
           ranges={require("./loc/expressions.json")}
         />

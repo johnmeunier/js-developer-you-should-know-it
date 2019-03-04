@@ -1,0 +1,30 @@
+[
+  {
+    "loc": [
+      0,
+      6
+    ],
+    "title": "block"
+  },
+  {
+    "loc": [
+      7,
+      12
+    ],
+    "title": "Warning: var scope"
+  },
+  {
+    "loc": [
+      13,
+      18
+    ],
+    "title": "const"
+  },
+  {
+    "loc": [
+      19,
+      28
+    ],
+    "title": "function"
+  }
+]
