@@ -36,3 +36,6 @@ cities.reduce((acc, {name, population}) => {
   acc.push(`${name}--${population}`); 
   return acc
 }, []);
+
+const myArr = ['a', 'b', 'd', 'c', 'd', 'a'];
+[...new Set(myArr)];

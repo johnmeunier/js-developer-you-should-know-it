@@ -19,7 +19,8 @@ const images = {
   consoleTable4: require("../assets/img/console-table4.png"),
   john: require("../assets/img/john.jpg"),
   jl: require("../assets/img/jl.jpg"),
-  lille: require("../assets/img/lille.jpg")
+  lille: require("../assets/img/lille.jpg"),
+  promise: require("../assets/img/promise.gif")
 };
 
 preloader({
@@ -30,7 +31,8 @@ preloader({
   consoleTable4: images.consoleTable4,
   john: images.john,
   jl: images.jl,
-  lille: images.lille
+  lille: images.lille,
+  promise: images.promise
 });
 
 // Require CSS
@@ -80,6 +82,10 @@ export default class Presentation extends React.Component {
           github="jlou"
           pic={images.jl}
         />
+        <Slide>
+          <Heading size={4} textColor="acajou">Vanilla.JS</Heading>
+          <iframe src="http://vanilla-js.com/" width="100%" height="600px"></iframe>
+        </Slide>
         <Slide bgColor="acajou" textColor="mustard">
           <Heading size={1}>{"{Object}"}</Heading>
         </Slide>
@@ -186,6 +192,12 @@ export default class Presentation extends React.Component {
         
         <Slide bgColor="acajou" textColor="mustard">
           <Heading size={1}>{"(.O{the}rs[])"}</Heading>
+        </Slide>
+        <Slide>
+          <Heading size={4} textColor="acajou">
+            Promise
+          </Heading>
+          <Image src={images.promise} height="600px" />
         </Slide>
         <CodeSlide
           className="codeSlide--john"
