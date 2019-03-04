@@ -21,7 +21,7 @@ const images = {
   jl: require("../assets/img/jl.jpg"),
   lille: require("../assets/img/lille.jpg"),
   promise: require("../assets/img/promise.gif"),
-  label: require("../assets/img/labeL.jpg")
+  label: require("../assets/img/label.jpg")
 };
 
 preloader({
