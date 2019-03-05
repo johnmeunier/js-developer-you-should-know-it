@@ -20,7 +20,8 @@ const images = {
   john: require("../assets/img/john.jpg"),
   jl: require("../assets/img/jl.jpg"),
   lille: require("../assets/img/lille.jpg"),
-  promise: require("../assets/img/promise.gif")
+  promise: require("../assets/img/promise.gif"),
+  label: require("../assets/img/label.jpg")
 };
 
 preloader({
@@ -189,7 +190,7 @@ export default class Presentation extends React.Component {
           code={require("raw-loader!../assets/codes/hof-safe.example")}
           ranges={require("./loc/hof-safe.json")}
         />
-        
+
         <Slide bgColor="acajou" textColor="mustard">
           <Heading size={1}>{"(.O{the}rs[])"}</Heading>
         </Slide>
@@ -223,13 +224,13 @@ export default class Presentation extends React.Component {
         </Slide>
         <CodeSlide
           className="codeSlide--john"
-          lang="js"          
+          lang="js"
           code={require("raw-loader!../assets/codes/promises.example")}
           ranges={require("./loc/promises.json")}
         />
         <CodeSlide
           className="codeSlide--john"
-          lang="js"          
+          lang="js"
           code={require("raw-loader!../assets/codes/expressions.example")}
           ranges={require("./loc/expressions.json")}
         />
