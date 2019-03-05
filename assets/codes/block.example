@@ -1,0 +1,28 @@
+let x = 1;
+{
+  let x = 2;
+  console.log(x); // logs 2
+}
+console.log(x); // logs 1
+
+var x = 1;
+{
+  var x = 2;
+}
+console.log(x); // logs 2
+
+const c = 1;
+{
+  const c = 2; // no syntax error
+}
+console.log(x); // logs 1
+
+foo('outside');
+// TypeError: foo is not a function
+{
+  function foo(location) {
+    console.log('foo is called ' + location);
+  }
+  foo('inside');
+    // works and logs 'foo is called inside'
+}

@@ -193,6 +193,28 @@ export default class Presentation extends React.Component {
         <Slide bgColor="acajou" textColor="mustard">
           <Heading size={1}>{"(.O{the}rs[])"}</Heading>
         </Slide>
+        <CodeSlide
+          className="codeSlide--john"
+          lang="js"
+          code={require("raw-loader!../assets/codes/label.example")}
+          ranges={require("./loc/label.json")}
+        />
+        <Slide>
+          <Heading size={4} textColor="acajou">Label result</Heading>
+          <Image src={images.label} />
+        </Slide>
+        <CodeSlide
+          className="codeSlide--john"
+          lang="js"
+          code={require("raw-loader!../assets/codes/block.example")}
+          ranges={require("./loc/block.json")}
+        />
+        <CodeSlide
+          className="codeSlide--john"
+          lang="js"
+          code={require("raw-loader!../assets/codes/fetch.example")}
+          ranges={require("./loc/fetch.json")}
+        />
         <Slide>
           <Heading size={4} textColor="acajou">
             Promise

@@ -1,0 +1,14 @@
+[
+  {
+    "loc": [0, 2],
+    "title": "Label"
+  },
+  {
+    "loc": [5, 6],
+    "title": "continue"
+  },
+  {
+    "loc": [0, 11],
+    "title": "Label"
+  }
+]
