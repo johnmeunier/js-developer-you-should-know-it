@@ -4,15 +4,50 @@
     "title": "block"
   },
   {
+    "loc": [3, 4],
+    "title": "block",
+    "note": "2"
+  },
+  {
+    "loc": [5, 6],
+    "title": "block",
+    "note": "1"
+  },
+  {
     "loc": [7, 12],
     "title": "Warning: var scope"
+  },
+  {
+    "loc": [11, 12],
+    "title": "block",
+    "note": "Warning: var scope"
   },
   {
     "loc": [13, 18],
     "title": "const"
   },
   {
+    "loc": [15, 16],
+    "title": "const",
+    "note": "no syntax error"
+  },
+  {
+    "loc": [17, 18],
+    "title": "const",
+    "note": "1"
+  },
+  {
     "loc": [19, 28],
     "title": "function"
+  },
+  {
+    "loc": [19, 20],
+    "title": "function",
+    "note": "TypeError: foo is not a function"
+  },
+  {
+    "loc": [24, 25],
+    "title": "function",
+    "note": "works and logs 'foo is called inside'"
   }
 ]
