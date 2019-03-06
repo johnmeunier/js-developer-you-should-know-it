@@ -25,7 +25,7 @@ const Profile = ({ name, job, website, github, twitter, pic }) => (
         </Link>
       </ListItem>
       <ListItem>
-        <Link href={`http://twitter.com/${twitter}`}>
+        <Link href={`http://twitter.com/${twitter.replace(" ", "")}`}>
           <Image src={images.twitter} />@{twitter}
         </Link>
       </ListItem>

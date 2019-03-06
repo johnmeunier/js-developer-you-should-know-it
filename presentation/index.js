@@ -21,7 +21,10 @@ const images = {
   jl: require("../assets/img/jl.jpg"),
   lille: require("../assets/img/lille.jpg"),
   promise: require("../assets/img/promise.gif"),
-  label: require("../assets/img/label.jpg")
+  label: require("../assets/img/label.jpg"),
+  badass: require("../assets/img/badass.gif"),
+  fear: require("../assets/img/fear.gif"),
+  withFramework: require("../assets/img/withFramework.gif"),
 };
 
 preloader({
@@ -33,7 +36,10 @@ preloader({
   john: images.john,
   jl: images.jl,
   lille: images.lille,
-  promise: images.promise
+  promise: images.promise,
+  badass: images.badass,
+  fear: images.fear,
+  withFramework: images.withFramework,
 });
 
 // Require CSS
@@ -83,6 +89,8 @@ export default class Presentation extends React.Component {
           github="jlou"
           pic={images.jl}
         />
+        <Slide bgImage={images.withFramework} />
+        <Slide bgImage={images.fear} />
         <Slide>
           <Heading size={4} textColor="acajou">Vanilla.JS</Heading>
           <iframe src="http://vanilla-js.com/" width="100%" height="600px"></iframe>
@@ -293,6 +301,7 @@ export default class Presentation extends React.Component {
           </Heading>
           <video width="100%" controls src={require("file-loader!../assets/video/liveExpression.mp4")} />
         </Slide>
+        <Slide bgImage={images.badass} />
         <Slide bgImage={images.lille}>
           <Heading size={6} textColor="#fff">
             JS Developer, you should know it
