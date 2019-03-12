@@ -1,5 +1,5 @@
 const conf = {
-    displayMinor: true
+    displayMinor: false
 } 
 
 export default conf;
