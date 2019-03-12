@@ -11,7 +11,8 @@ import Twitter from './twitter';
 import 'prismjs/themes/prism-okaidia.css';
 import './index.css';
 
-const minor = false;
+import conf from './conf.js';
+const { displayMinor } = conf;
 
 const images = {
   consoleGroup: require('../assets/img/console-group.png'),
@@ -91,7 +92,7 @@ export default class Presentation extends React.Component {
           github="jlou"
           pic={images.jl}
         />
-        {minor && <>
+        {displayMinor && <>
         <Slide bgImage={images.withFramework} />
         <Slide bgImage={images.fear} />
         <Slide>
@@ -205,7 +206,7 @@ export default class Presentation extends React.Component {
         <Slide bgColor="acajou" textColor="mustard">
           <Heading size={1}>{'(.O{the}rs[])'}</Heading>
         </Slide>
-        {minor && <>
+        {displayMinor && <>
         <CodeSlide
           className="codeSlide--john"
           lang="js"
@@ -247,7 +248,7 @@ export default class Presentation extends React.Component {
           code={require('raw-loader!../assets/codes/expressions.example')}
           ranges={require('./loc/expressions.json')}
         />
-        {minor && <>
+        {displayMinor && <>
         <Slide bgColor="acajou" textColor="mustard">
           <Heading size={1}>One more thing ...</Heading>
         </Slide>
