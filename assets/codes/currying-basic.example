@@ -1,6 +1,6 @@
 add = (n, m) => (n + m)
 
-curryedAdd = n => m => add(n, m)
+curryedAdd = n => ( m => add(n, m) )
 
 addSeven = curryedAdd(7)
 addSeven(35) // 42

@@ -10,10 +10,10 @@ const cities = [
 
 const moreThan5M = (val) => val > 5000000;
 
-cities.forEach(({name, population}) => moreThan5M(population));
 cities.forEach(({name, population}) => {
   moreThan5M(population) && console.log(name);
 });
+cities.forEach(({name, population}) => moreThan5M(population));
 
 cities.map(({population}) => moreThan5M(population)); 
 

@@ -38,6 +38,7 @@ const myBool = ['val1'].length;
 myBool || 'empty';
 const myBool = [].length;
 myBool || 'empty';
+(arr || []).map(add);
 
 const changeCtx = (state) => 
   void state && addToRisk('toto');

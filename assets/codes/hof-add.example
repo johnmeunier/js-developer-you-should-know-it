@@ -1,5 +1,9 @@
 add = (a, b) => a + b
 
+add(1, 2)
+add(1, null);
+add(1, "2");
+
 makeSafe = fn => (...args) => {
   if (args.some(arg => Number(arg) !== arg)) return NaN;
   return fn(…args);
@@ -7,6 +11,6 @@ makeSafe = fn => (...args) => {
 
 safeAdd = makeSafe(add);
 
-safeAdd(1, 2) // 3
-safeAdd(1, null); // NaN
-safeAdd(1, "2"); // NaN
+safeAdd(1, 2);
+safeAdd(1, null);
+safeAdd(1, "2");

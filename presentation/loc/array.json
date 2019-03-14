@@ -8,14 +8,14 @@
     "title": "Callback"
   },
   {
-    "loc": [12, 13],
-    "title": "For Each",
-    "note": "undefined"
-  },
-  {
-    "loc": [13, 16],
+    "loc": [12, 15],
     "title": "For Each",
     "note": "Londres Tokyo Mexico"
+  },
+  {
+    "loc": [15, 16],
+    "title": "For Each",
+    "note": "undefined"
   },
   {
     "loc": [17, 18],

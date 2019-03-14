@@ -71,9 +71,9 @@ export default class Presentation extends React.Component {
           <Heading size={2} textColor="mustard">
             JS Developer, you should know it
           </Heading>
-          <Heading size={6} textColor="white">
+          {displayMinor && <Heading size={6} textColor="white">
             Discovery of a new fashionable framework : Vanilla.js
-          </Heading>
+          </Heading>}
           <Twitter />
         </Slide>
         <Profile

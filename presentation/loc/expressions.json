@@ -29,11 +29,7 @@
       "note": "0"
     },
     {
-      "loc": [17, 30],
-      "title": "JSX"
-    },
-    {
-      "loc": [30, 35],
+      "loc": [17, 35],
       "title": "JSX"
     },
     {
@@ -47,7 +43,11 @@
       "note": "empty"
     },
     {
-      "loc": [41, 43],
+      "loc": [40, 41],
+      "title": "default value"
+    },
+    {
+      "loc": [42, 44],
       "title": "void"
     }
 ]
