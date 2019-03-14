@@ -20,6 +20,7 @@ const images = {
   consoleTable2: require('../assets/img/console-table2.png'),
   consoleTable3: require('../assets/img/console-table3.png'),
   consoleTable4: require('../assets/img/console-table4.png'),
+  qrcode: require('../assets/img/qrcode.png'),
   john: require('../assets/img/john.jpg'),
   jl: require('../assets/img/jl.jpg'),
   lille: require('../assets/img/lille.jpg'),
@@ -35,6 +36,7 @@ preloader({
   consoleTable1: images.consoleTable1,
   consoleTable2: images.consoleTable2,
   consoleTable3: images.consoleTable3,
+  qrcode: images.qrcode,
   consoleTable4: images.consoleTable4,
   john: images.john,
   jl: images.jl,
@@ -317,6 +319,13 @@ export default class Presentation extends React.Component {
           <Heading textColor="mustard" fit>
             Thanks!
           </Heading>
+          <Twitter />
+        </Slide>
+        <Slide bgColor="mustard">
+          <Heading size={6} textColor="acajou">
+            JS Developer, you should know it
+          </Heading>
+          <Image src={images.qrcode} height="500px" />
           <Twitter />
         </Slide>
       </Deck>
