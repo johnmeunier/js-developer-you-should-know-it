@@ -28,14 +28,14 @@ cities.some(({population}) => population > 100000000);
 cities.every(({population}) => population > 1000);
 cities.every(({population}) => population > 5000000);
 
-cities.sort((a, b) => a.population - b.population);
-cities.sort((a, b) => a.population + b.population);
+cities.slice().sort((a, b) => a.population - b.population);
+cities.slice().sort((a, b) => b.population - a.population);
 
 cities.reduce((acc, {population}) => acc + population, 0);
 cities.reduce((acc, {name, population}) => {
-  acc.push(`${name}--${population}`); 
-  return acc
-}, []);
+  acc[name] = population; 
+  return acc;
+}, {});
 
 const myArr = ['a', 'b', 'd', 'c', 'd', 'a'];
 [...new Set(myArr)];

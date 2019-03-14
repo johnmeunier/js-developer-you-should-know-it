@@ -75,7 +75,7 @@
   {
     "loc": [34, 38],
     "title": "Reduce",
-    "note": "[ 'Tokyo--13754059', 'Mexico--8851080', 'Londres--8630100', 'Berlin--3520000', 'Madrid--3233527', 'Paris--2268265', 'Washington--658893' ] "
+    "note": "{Tokyo: 13754059, Mexico: 8851080, Londres: 8630100, Berlin: 3520000, Madrid: 3233527, Paris: 2268265, Washington: 658893 }"
   },
   {
     "loc": [39, 41],
