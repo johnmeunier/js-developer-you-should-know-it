@@ -5,8 +5,8 @@ add(1, null);
 add(1, "2");
 
 makeSafe = fn => (...args) => {
-  if (args.some(arg => Number(arg) !== arg)) return NaN;
-  return fn(…args);
+  if (args.every(Number.isFinite)) return fn(...args);
+  return NaN;
 }
 
 safeAdd = makeSafe(add);

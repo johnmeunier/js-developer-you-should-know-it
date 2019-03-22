@@ -8,6 +8,7 @@ const logAddSeven = x => {
 valueToAdd = 7;
 addAValue = x => x + valueToAdd;
 addAValue(8);
+valueToAdd = 'AXAEngineeringSummit'; // can happen anywhere, anytime
 addAValue(8);
 
 addAValue = (x, y) => x + y;

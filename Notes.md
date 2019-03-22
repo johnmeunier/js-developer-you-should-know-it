@@ -6,7 +6,7 @@
 *John*
 *1mns*
 
-Hello Everyone. To begin, thank you for being there, it's a pleasure to talk to you about Javascript, especially about the topics that we will discuss : objects and array manipulation, functionnal programming and some tips. That will be a condensed version of a one hour original talk, you can find the full version on my github with some dev tools tips, promises and block scope tips.
+Hello Everyone. Thank you for being there, it's a pleasure to talk to you about Javascript, especially about the topics that we will discuss : objects and array manipulation, functionnal programming and some tips. That will be a condensed version of a one hour original talk, you can find the full version on my github with some dev tools tips, promises and block scope tips.
 
 #### John
 My name is Johnathan MEUNIER and I'm a french full stack JS developer. I'm software engineer at the Lille Webcenter, in the North of france. You can find me on Twitter @J7N__ and on my Github @johnmeunier

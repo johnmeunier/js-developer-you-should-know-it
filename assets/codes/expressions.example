@@ -41,4 +41,4 @@ myBool || 'empty';
 (arr || []).map(add);
 
 const changeCtx = (state) => 
-  void state && addToRisk('toto');
+  void (state && addToRisk('toto'));

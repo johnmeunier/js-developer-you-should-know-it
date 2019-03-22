@@ -4,7 +4,7 @@
     "title": "console.time();"
   },
   {
-    "loc": [1, 2],
+    "loc": [1, 5],
     "title": "console.time();"
   },
   {
@@ -13,10 +13,6 @@
   },
   {
     "loc": [3, 4],
-    "title": "console.time();"
-  },
-  {
-    "loc": [4, 5],
     "title": "console.time();"
   },
   {

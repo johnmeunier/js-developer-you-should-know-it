@@ -73,9 +73,9 @@ export default class Presentation extends React.Component {
           <Heading size={2} textColor="mustard">
             JS Developer, you should know it
           </Heading>
-          {displayMinor && <Heading size={6} textColor="white">
-            Discovery of a new fashionable framework : Vanilla.js
-          </Heading>}
+          <Heading size={6} textColor="white">
+            A case for functional programming
+          </Heading>
           <Twitter />
         </Slide>
         <Profile
@@ -131,7 +131,7 @@ export default class Presentation extends React.Component {
           </Heading>
           <List>
             <ListItem>No side effects</ListItem>
-            <ListItem>Deterministic: its result depends only on his parameters</ListItem>
+            <ListItem>Deterministic: its result depends only on its parameters</ListItem>
           </List>
         </Slide>
         <CodeSlide
@@ -250,7 +250,6 @@ export default class Presentation extends React.Component {
           code={require('raw-loader!../assets/codes/expressions.example')}
           ranges={require('./loc/expressions.json')}
         />
-        {displayMinor && <>
         <Slide bgColor="acajou" textColor="mustard">
           <Heading size={1}>One more thing ...</Heading>
         </Slide>
@@ -296,6 +295,7 @@ export default class Presentation extends React.Component {
           code={require('raw-loader!../assets/codes/console-time.example')}
           ranges={require('./loc/console-time.json')}
         />
+        {displayMinor && <>
         <Slide>
           <Heading size={4} textColor="acajou">
             Copy

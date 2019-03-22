@@ -32,25 +32,25 @@
     "note": "15 ?"
   },
   {
-    "loc": [10, 11],
+    "loc": [10, 12],
     "title": "Result ?",
-    "note": "17 ?"
+    "note": "8AXAEngineeringSummit"
   },
   {
-    "loc": [12, 13],
+    "loc": [13, 14],
     "title": "Pure"
   },
   {
-    "loc": [14, 16],
+    "loc": [15, 17],
     "title": "Pure or impure ?"
   },
   {
-    "loc": [14, 16],
+    "loc": [15, 17],
     "title": "Pure or impure ?",
     "note": "Impure"
   },
   {
-    "loc": [17, 19],
+    "loc": [18, 20],
     "title": "Pure"
   }
 ]
