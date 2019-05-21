@@ -71,7 +71,7 @@ export default class Presentation extends React.Component {
       <Deck transition={['zoom', 'slide']} transitionDuration={500} theme={theme} bgColor="mustard">
         <Slide bgImage={images.lille}>
           <Heading size={2} textColor="mustard">
-            JS Developer, you should know it
+            First steps towards writing functional Javascript
           </Heading>
           <Heading size={6} textColor="white">
             A case for functional programming
