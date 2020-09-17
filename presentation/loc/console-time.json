@@ -17,6 +17,7 @@
   },
   {
     "loc": [0, 5],
-    "title": "console.time();"
+    "title": "console.time();",
+    "note": "finish / t: 2001.320068359375 ms"
   }
 ]
