@@ -94,13 +94,12 @@ export default class Presentation extends React.Component {
           github="jlou"
           pic={images.jl}
         />
-        {displayMinor && <>
         <Slide bgImage={images.withFramework} />
         <Slide bgImage={images.fear} />
         <Slide>
           <Heading size={4} textColor="acajou">Vanilla.JS</Heading>
           <iframe src="http://vanilla-js.com/" width="100%" height="600px" />
-        </Slide> </>}
+        </Slide>
         <Slide bgColor="acajou" textColor="mustard">
           <Heading size={1}>{'{Object}'}</Heading>
         </Slide>
@@ -208,7 +207,7 @@ export default class Presentation extends React.Component {
         <Slide bgColor="acajou" textColor="mustard">
           <Heading size={1}>{'(.O{the}rs[])'}</Heading>
         </Slide>
-        {displayMinor && <>
+        
         <CodeSlide
           className="codeSlide--john"
           lang="js"
@@ -243,7 +242,6 @@ export default class Presentation extends React.Component {
           code={require('raw-loader!../assets/codes/promises.example')}
           ranges={require('./loc/promises.json')}
         />
-        </>}
         <CodeSlide
           className="codeSlide--john"
           lang="js"
@@ -295,7 +293,6 @@ export default class Presentation extends React.Component {
           code={require('raw-loader!../assets/codes/console-time.example')}
           ranges={require('./loc/console-time.json')}
         />
-        {displayMinor && <>
         <Slide>
           <Heading size={4} textColor="acajou">
             Copy
@@ -311,7 +308,6 @@ export default class Presentation extends React.Component {
           <video width="100%" controls src={require('file-loader!../assets/video/liveExpression.mp4')} />
         </Slide>
         <Slide bgImage={images.badass} />
-        </>}
         <Slide bgImage={images.lille}>
           <Heading size={6} textColor="#fff">
             JS Developer, you should know it
